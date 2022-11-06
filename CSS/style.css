@@ -46,7 +46,7 @@ body {
   height: 100%;
 }
 .main-box .left-box {
-  width: 480px;
+  width: 470px;
   background-color: white;
 }
 .main-box .left-box header {
@@ -100,6 +100,8 @@ body {
 .main-box .center-search-box .input-search i {
   font-weight: bold;
   font-size: 13px;
+  opacity: 0.7;
+  color: black;
 }
 .main-box .center-search-box .filter {
   padding-top: 8px;
@@ -110,6 +112,8 @@ body {
 .main-box .center-search-box .filter i {
   font-size: 20px;
   cursor: pointer;
+  font-weight: bold;
+  opacity: 0.5;
 }
 .main-box .user-friend {
   height: 640px;
@@ -157,7 +161,7 @@ body {
   font-size: 12px;
 }
 .main-box .user-friend .friend-block .friend-detail .friend-last-chat {
-  padding-top: 5px;
+  padding-top: 2px;
   padding-left: 8px;
   opacity: 0.7;
   justify-content: space-between;
