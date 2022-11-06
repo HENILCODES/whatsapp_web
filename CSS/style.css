@@ -6,6 +6,11 @@
 
 body {
   background-color: rgba(216, 216, 238, 0.822);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: Segoe UI, Helvetica Neue, Helvetica, Lucida Grande, Arial, Ubuntu, Cantarell, Fira Sans, sans-serif;
 }
 
 .w-100 {
@@ -35,18 +40,19 @@ body {
 }
 
 .main-box {
-  background-color: rgb(233, 224, 224);
+  background-color: #f0f2f5;
   max-width: 1600px;
   margin: auto;
   height: 100%;
 }
 .main-box .left-box {
-  max-width: 30%;
+  width: 480px;
   background-color: white;
 }
 .main-box .left-box header {
   justify-content: flex-end;
   padding: 8px 15px;
+  background-color: #f0f2f5;
 }
 .main-box .left-box header .option {
   align-items: center;
@@ -75,12 +81,12 @@ body {
   border-radius: 50%;
 }
 .main-box .center-search-box {
-  padding: 6px 9px;
+  padding: 8px 9px;
 }
 .main-box .center-search-box .input-search {
-  background-color: rgb(229, 229, 229);
+  background-color: #f0f2f5;
   border-radius: 11px;
-  padding: 8px 20px;
+  padding: 9px 22px;
 }
 .main-box .center-search-box .input-search .icon {
   padding-right: 30px;
@@ -106,32 +112,59 @@ body {
   cursor: pointer;
 }
 .main-box .user-friend {
-  height: 650px;
-  overflow: auto;
+  height: 640px;
+  overflow-y: auto;
+}
+.main-box .user-friend .block {
+  align-items: center;
+  border-top: 1px solid #e9edef;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.main-box .user-friend .block:hover {
+  background-color: #f6f4f4;
 }
 .main-box .user-friend .friend-block {
-  padding: 8px;
+  align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 72px;
+}
+.main-box .user-friend .friend-block .imgB {
+  padding: 0 15px 0 12px;
+  align-items: center;
 }
 .main-box .user-friend .friend-block .friend-img {
-  width: 50px;
-  padding: 1px 8px;
+  width: 49px;
+  height: 49px;
   height: 50px;
+  margin-top: -1px;
 }
 .main-box .user-friend .friend-block .friend-img img {
-  width: 50px;
-  height: 50px;
+  width: 49px;
+  height: 49px;
   border-radius: 50%;
 }
 .main-box .user-friend .friend-block .friend-detail {
-  padding: 2px 15px;
+  padding-right: 15px;
 }
 .main-box .user-friend .friend-block .friend-detail .friend-name {
   justify-content: space-between;
+  color: #111b21;
+}
+.main-box .user-friend .friend-block .friend-detail .f-active {
+  font-size: 12px;
 }
 .main-box .user-friend .friend-block .friend-detail .friend-last-chat {
   padding-top: 5px;
   padding-left: 8px;
   opacity: 0.7;
+  justify-content: space-between;
+}
+
+.lig-color {
+  color: #505b62 !important;
 }
 
 .border {
@@ -146,5 +179,5 @@ body {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 2px;
-  background-color: rgb(179, 179, 179);
+  background-color: rgb(213, 213, 213);
 }/*# sourceMappingURL=style.css.map */
