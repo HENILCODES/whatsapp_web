@@ -17,10 +17,13 @@ export default function UserChatFriendList(props) {
                     <div className="friend-last-chat d-flex">
                         <div className="left">
                             <i className="bi bi-check2"></i>
-                            <span className="lig-color">{props.prev_chat}</span>
+                            <span className="lig-color Prchat" >{props.prev_chat}</span>
                         </div>
                         <div className="right">
-                            <i className="bi bi-pin-angle-fill lig-color"></i>
+                            <i className="bi bi-chevron-down" id='chat_more_op'></i>
+                            {/* <div className="chat_more_option">
+
+                            </div> */}
                         </div>
                     </div>
                 </div>

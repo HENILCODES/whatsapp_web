@@ -18,6 +18,14 @@ export default function Header() {
                 </div>
                 <div className="option-icon">
                     <i className="bi bi-three-dots-vertical"></i>
+                    {/* <div className="More_option">
+                        <ul>
+                            <li>New Group</li>
+                            <li>Starred Messages</li>
+                            <li>Settings</li>
+                            <li>Log out</li>
+                        </ul>
+                    </div> */}
                 </div>
             </div>
         </header>

@@ -140,9 +140,15 @@ body {
   flex-direction: row;
   height: 72px;
 }
+.main-box .user-friend .friend-block:hover #chat_more_op {
+  visibility: visible !important;
+}
 .main-box .user-friend .friend-block .imgB {
   padding: 0 15px 0 12px;
   align-items: center;
+}
+.main-box .user-friend .friend-block .Prchat {
+  margin-left: 3px;
 }
 .main-box .user-friend .friend-block .friend-img {
   width: 49px;
@@ -166,10 +172,15 @@ body {
   font-size: 12px;
 }
 .main-box .user-friend .friend-block .friend-detail .friend-last-chat {
-  padding-top: 2px;
-  padding-left: 8px;
+  padding-top: 5px;
   opacity: 0.7;
   justify-content: space-between;
+}
+.main-box .user-friend .friend-block .friend-detail .friend-last-chat .right #chat_more_op {
+  visibility: hidden;
+}
+.main-box .user-friend .friend-block .friend-detail .friend-last-chat .right i {
+  font-size: 17px;
 }
 .main-box .right-box {
   width: 100%;
