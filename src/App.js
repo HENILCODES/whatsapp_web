@@ -1,23 +1,15 @@
 import React from 'react'
-import Header from './Header'
+import Leftside from './Leftside'
+import Rightside from './Rightside'
 export default function App() {
   return (
-    <div className='box'>
-      <div className="left-box">
-        <Header />
-        <div className="center-search-box d-flex">
-          <div className="input-search d-flex w-100">
-            <div className="icon">
-              <i className="bi bi-search"></i>
-            </div>
-            <input className="input" contenteditable="true" placeholder="Search or start new chat" />
-          </div>
-          <div className="filter">
-            <i className="bi bi-filter"></i>
-          </div>
-        </div>
+    <div className="main-box">
+      <div className='box'>
+        <Leftside />
       </div>
-
+      <div class="w-100">
+        <Rightside />
+      </div>
     </div>
 
   )

@@ -1,6 +1,6 @@
 import React from 'react'
 import Henil from './IMG/henil.jpg'
-import load from './IMG/load.png'
+import Status from './IMG/StatusLoadIcon.png'
 export default function Header() {
     return (
         <header className="d-flex">
@@ -11,7 +11,7 @@ export default function Header() {
             </div>
             <div className="option d-flex">
                 <div className="option-icon p-r">
-                    <img src={load} alt="load" />
+                    <img src={Status} alt="Status" />
                 </div>
                 <div className="option-icon p-r">
                     <i className="bi bi-chat-left-text-fill"></i>
