@@ -7,7 +7,7 @@ export default function App() {
       <div className='box'>
         <Leftside />
       </div>
-      <div class="w-100">
+      <div className="w-100">
         <Rightside />
       </div>
     </div>

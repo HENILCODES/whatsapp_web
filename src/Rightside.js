@@ -3,7 +3,7 @@ import DefaultRight from './components/DefaultRight'
 
 export default function Rightside() {
     return (
-        <div class="right-box">
+        <div className="right-box">
            <DefaultRight/>
         </div>
     )

@@ -7,7 +7,7 @@ export default function Searchbox() {
                 <div className="icon">
                     <i className="bi bi-search"></i>
                 </div>
-                <input className="input" contenteditable="true" placeholder="Search or start new chat" />
+                <input className="input" contentEditable="true" placeholder="Search or start new chat" />
             </div>
             <div className="filter">
                 <i className="bi bi-filter"></i>

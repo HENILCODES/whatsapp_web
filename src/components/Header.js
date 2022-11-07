@@ -11,7 +11,7 @@ export default function Header() {
             </div>
             <div className="option d-flex">
                 <div className="option-icon p-r">
-                    <img src={Status} alt="Status" />
+                    <img src={Status} alt="Status" className='c-pointer' />
                 </div>
                 <div className="option-icon p-r">
                     <i className="bi bi-chat-left-text-fill"></i>
