@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import useInput from "./hook/useInput";
+import Pdf from "react-to-pdf";
 import "./App.css";
 function App() {
+  const ref = React.createRef();
   let [formValid, setFormValid] = useState(false);
   let [pending, setPending] = useState(false);
   let {
@@ -55,7 +57,7 @@ function App() {
   }, [NameValid, SemminarValid, NameInput, SemminarInput]);
   return (
     <div className="main">
-      <div className="box">
+      <div ref={ref} className="box">
         <div className="infor">
           <form autoComplete="off" onSubmit={submitHandler}>
             <div className="input_box">
@@ -100,6 +102,9 @@ function App() {
           </form>
         </div>
       </div>
+      <Pdf targetRef={ref} filename="code-example.pdf" x={40} y={20}>
+        {({ toPdf }) => <button onClick={toPdf}>Generate Pdf</button>}
+      </Pdf>
     </div>
   );
 }
